@@ -1,24 +1,25 @@
 # Soc Ops — A VS Code Agent Lab (1hr)
 
+Harald Kirschner `@digitarald`
+— VS Code Team `@code`
+
 ## Checklist
 
 - [ ] Latest VS Code **v1.107** (no update pending)
 - [ ] Signed in with GitHub
+  - Copilot Free can not run cloud agent!
+- [ ] Git & Node installed
 - [ ] Chat open and Agent ready for action
 
 *Optional*: Use DevContainer or WSL.
-
-## Learning Objectives
-
-1. Onboard AI to your codebase and workflows with context engineering
-2. In-depth understanding of the primitives to build an AI-first engineering flow
-3. Unlocking agentic abundance to scale exploration and speed up learning across all development tasks
 
 ## Setup
 
 https://github.com/microsoft/vscode-agent-lab-soc-ops
 
-1. GitHub: *Use this template* > *Create a new repository*
+1. GitHub:
+   1. *Use this template* > *Create a new repository* (pick your name)
+   2. Enable *Settings* > *Pages* > *Deploy from a branch* to *GitHub Actions*
 2. VS Code
 	- Install recommended extensions (notification or `Extensions: Show Recommended Extensions`)
 	- Command: `Git: Clone > Clone from GitHub`
@@ -26,6 +27,14 @@ https://github.com/microsoft/vscode-agent-lab-soc-ops
 3. 🎉 App is running and open in browser!
 
 Keep this `.lab/GUIDE.md` open (📌 Pin).
+
+## Learning Objectives
+
+After completing this workshop, you:
+1. **Can onboard AI to your codebase** and workflows with context engineering
+2. **Understand the agentic primitives** to build an AI-first engineering flow
+3. **Unlocked agentic abundance** to scale exploration and speed up learning across more development tasks
+4. **felt the vibes** … hey, you designed and build your social social bingo; use to create more good vibes
 
 ## Recommendation
 
@@ -35,7 +44,7 @@ Keep this `.lab/GUIDE.md` open (📌 Pin).
 
 ## 1. Context engineering your repo
 
-Tour of the project.
+Tour of the project. Try out the game.
 
 ### Task: Run and understand the /setup prompt
 
@@ -76,7 +85,7 @@ See prompt in the footer.
 
 ### Task: Check Frontend Instructions
 
-**Why it matters**: The “no purple gradients” instructions.
+**TL;DR**: The “no purple gradients” instructions, challanges the agent to think like a designer and be more bold and creative.
 
 Source: Claude blog, linked in the footer.
 
@@ -93,7 +102,7 @@ Now that we've engineered the repo context, let's get creative.
 Steps:
 1. Switch to Plan mode
 2. *Lets do a full redesign. Make it …*
-3. Review plan
+3. Review plan and start Implement
 
 Ideas:
 - Minimalist Mono
@@ -126,12 +135,16 @@ Ideas:
 - Bold Serif Vintage
 - Toybox Primary Colors
 
+Result: Frontend and tailwind instructions are use to build a beautiful design.
+
 ### Task: Keep instructions updated
 
 **TL;DR**: Keep instructions updated with major architecture/design/dependency changes.
 
-1. Follow-up: `Add design section to copilot-instructions.md`
+1. Follow-up: `Add design guide section to copilot-instructions.md`
 2. Confirm, commit and push
+
+Bonus: Check that GitHub pages is updating.
 
 ### Task: A lot more redesign
 
@@ -192,6 +205,8 @@ Steps:
 - Start a new Plan agent
 - *Add a new Scavenger Hunt mode: same questions, but shown as simple list with checkboxes + progress meter.*
 - Iterate on plan for correctness and completeness …
+  - Does it add the mode to the start page?
+  - Does it go overboard with progress?
 - Run TDD Red mode *Start with tests*
 	- Review tests being written
 	- Check out VS Code's test runner
@@ -229,9 +244,24 @@ Steps:
   - Aside: Open `.github/agents/pixel-jam.agent.md` to review the prompt
 - *Result*: Behold a mighty in-depth review
 - Bonus:
-  - File issues on GitHub
-  - Assign most critical issues to to coding agent to fix
+  - File findings as issues on GitHub for later
+  - Assign critical issues to coding agent to fix
 
-## Bonus
+## Bonus: Keep going
 
 - Fix UX review problems, delegated to background or cloud agent
+- Add ability to have multiple question themes to pick from
+- Add social sharing to win state
+- Make a real iOS or full-stack app?
+
+---
+
+Happy Coding,
+
+  👋 Harald Kirschner and the VS Code team
+
+p.s. to stay up to date:
+
+1. [VS Code on YouTube](https://www.youtube.com/code)
+2. [VS Code Copilot Docs](https://code.visualstudio.com/docs/copilot/overview)
+3. [Awesome Copilot](https://github.com/github/awesome-copilot) for more customizations
